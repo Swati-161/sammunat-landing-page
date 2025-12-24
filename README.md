@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Sammunat LLC | Internship Landing Page Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+This project was developed as part of my internship application for **Sammunat LLC**. The goal was to take a standard corporate template and transform it into a high-end, modern agency landing page that reflects the brand's identity.
 
-## Available Scripts
+I spent significant time refining the visual hierarchy, ensuring that the "Electric Blue" accent colors pop against the dark slate background without overwhelming the user.
 
-In the project directory, you can run:
+## Project Structure
+* `/src/components`: Reusable React components (Header, Footer, Hero, etc.)
+* `/src/App.css`: Centralized stylesheet containing all global variables and component styles.
+* `/public`: Static assets and branding.
 
-### `npm start`
+> **Note on Styling**: For this initial version, I have kept the entire CSS codebase within `App.css`. This was a conscious decision to ensure strict brand consistency across all components using global variables. I plan to modularize this into separate component-level CSS files as the project scales.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Design Decisions
+Unlike a standard boilerplate, I made several custom styling choices to elevate the professional feel:
+* **Refined Branding**: Standardized the Header and Footer company names to a consistent "Silver-Gray" (`#e2e8f0`). This acts as a sophisticated frame for the more colorful body content.
+* **UX Improvements**: Removed default link underlines from the "We are Hiring" badge to make it feel like a clean, interactive UI element rather than a standard text link.
+* **Balanced Layout**: Adjusted the Services section into a symmetrical 2x2 grid to ensure the visual weight matches the rest of the site's sections.
+* **Performance**: Optimized the React build for fast loading on Netlify.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Experience the Site
+**Live Demo:** [https://sammunat-llc.netlify.app](https://sammunat-llc.netlify.app)
 
-### `npm test`
+## Tech I Used
+* **React.js**: For the component-based architecture.
+* **Modern CSS**: Using CSS Variables (`:root`) for easy theme management and Flexbox/Grid for responsiveness.
+* **Git/GitHub**: For version control and professional workflow.
+* **Netlify**: For Continuous Deployment (CI/CD).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Run This Locally
+If you'd like to check out the code on your own machine:
 
-### `npm run build`
+1. Clone this repo: `git clone https://github.com/swati-161/sammunat-landing-page.git`
+2. Install the bits: `npm install`
+3. Launch it: `npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+**Maintained by [Swati Nim](https://github.com/swati-161)**
