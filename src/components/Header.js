@@ -1,6 +1,15 @@
 import React from 'react';
 
 const Header = () => {
+  // Function to handle the smooth scroll
+  const scrollToTop = (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <header className="header">
       <div className="header-container" style={{ 
@@ -12,11 +21,11 @@ const Header = () => {
         margin: '0 auto' 
       }}>
        
-        <h1 className="header-brand">
+        {/* Changed to an <a> tag with the scrollToTop function */}
+        <a href="/" className="header-brand" onClick={scrollToTop} style={{ textDecoration: 'none' }}>
           Sammunat <span>LLC</span>
-        </h1>
+        </a>
 
-       
         <nav>
           <a href="/hiring" className="header-link hiring-badge">
             We are Hiring

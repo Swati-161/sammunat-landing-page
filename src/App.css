@@ -66,7 +66,6 @@ h2 {
 }
 
 
-
 button {
   background: var(--primary);
   color: white;
@@ -250,7 +249,17 @@ button:hover {
   color: var(--text-secondary);
 }
 
-.contact-form input, 
+.contact-form input {
+  background: var(--bg-main);
+  border: 1px solid var(--border);
+  color: white;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  height: 50px; 
+}
+
 .contact-form textarea {
   background: var(--bg-main);
   border: 1px solid var(--border);
@@ -259,6 +268,11 @@ button:hover {
   border-radius: 12px;
   font-size: 1rem;
   transition: all 0.3s ease;
+  
+  resize: vertical;    
+  width: 100%;         
+  min-height: 150px;   
+  max-height: 500px;
 }
 
 .contact-form input:focus, 
@@ -531,8 +545,39 @@ button:hover {
   min-height: 60px; 
 }
 
+a.header-brand {
+  font-size: 1.5rem;
+  font-weight: 700;   
+  letter-spacing: -0.01em;
+  text-decoration: none !important;
+  cursor: pointer;
+  display: inline-block;
+  background-image: linear-gradient(to right, #ffffff, #94a3b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #e2e8f0; 
+}
 
-.header-brand, 
+a.header-brand span {
+  background-image: linear-gradient(to right, #ffffff, #94a3b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a.header-brand:hover {
+  opacity: 0.7; 
+  transform: translateY(-1px); 
+  transition: all 0.3s ease;
+}
+
+
+a.header-brand:hover span {
+  filter: brightness(1.2); 
+}
+
+
 .footer-brand {
   color: #e2e8f0 !important; 
   font-size: 1.5rem;
@@ -541,7 +586,7 @@ button:hover {
   text-decoration: none;
 }
 
-.header-brand span,
+
 .footer-brand span {
   color: #e2e8f0 !important;
 }

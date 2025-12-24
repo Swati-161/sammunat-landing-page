@@ -14,9 +14,10 @@ I spent significant time refining the visual hierarchy, ensuring that the "Elect
 
 ## Key Design Decisions
 Unlike a standard boilerplate, I made several custom styling choices to elevate the professional feel:
-* **Refined Branding**: Standardized the Header and Footer company names to a consistent "Silver-Gray" (`#e2e8f0`). This acts as a sophisticated frame for the more colorful body content.
+* **Interactive Navigation**: Implemented a smooth-scroll "Return to Top" feature on the header brand name. I restored a custom silver-glass gradient using `background-clip: text` to ensure the logo remains visually striking while becoming functional.
 * **UX Improvements**: Removed default link underlines from the "We are Hiring" badge to make it feel like a clean, interactive UI element rather than a standard text link.
 * **Balanced Layout**: Adjusted the Services section into a symmetrical 2x2 grid to ensure the visual weight matches the rest of the site's sections.
+* **Defensive UX (Form Control)**: Restricted the contact form's message box to vertical resizing only. This prevents users from accidentally breaking the site's layout while still allowing them enough room to review long messages.
 * **Performance**: Optimized the React build for fast loading on Netlify.
 
 ## Experience the Site
